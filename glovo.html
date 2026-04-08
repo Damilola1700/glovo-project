@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glovo Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="flex item-center bg-[#FFC042] z-10 sm: sticky top-0 place-content-center"
+    >
+      <div>
+        <img
+          class="w-[100%]"
+          src="glovo-image/download-removebg-preview (2).png"
+          alt=""
+        />
+      </div>
+      <div class="pt-[30px]">
+        <button
+          class="ml-[900px]  font-bold text-white bg-[#017963] h-[40px] w-[90px] rounded-[50px]"
+        >
+          <i class="fa-solid fa-user"></i>
+          Login
+        </button>
+      </div>
+    </nav>
+    <section class="bg-[#FFC042] h-[500px] flex">
+      <video
+        src="glovo-image/glovo animation.webm"
+        autoplay
+        loop
+        class="w-[40%] ml-[60px] hidden md:hidden lg:block"
+      ></video>
+      <div
+        class="ml-[100px] mt-[70px] grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <h1 class="text-[56px] font-sans font-bold leading-tight mb-[40px]">
+          Food delivery and <br />
+          more
+        </h1>
+        <p class="font-bold font-sans text-[24px] mb-[20px]">
+          Groceries, shops, pharmacies, anything!
+        </p>
+
+        <div class="w-[500px] h-[60px] rounded-xl bg-white py-[8px] px-[30px]">
+          <i class="fa-solid fa-location-dot"></i>
+          <input
+            type="text"
+            placeholder="what's your address?"
+            class="text-xl flex-2"
+          />
+          <button
+            class="text-center font-sans font-bold text-[#017963] bg-green-100 rounded-full p-[10px]"
+          >
+            Use Current Location
+          </button>
+        </div>
+      </div>
+    </section>
+    <div>
+      <h1
+        class="text-[40px] text-center text-[40px] md:mb-[40px] mt-[60px] font-sans font-bold"
+      >
+        Top restaurants and more in Glovo
+      </h1>
+    </div>
+    <div
+      class="grid grid-cols-4 gap-5 sm:grid-cols-1 md:grid-cols-3 justify-items-center lg:grid-cols-4 justify-items-center"
+    >
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/mc donalds.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[9px] left-4 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          Mc Donald's
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/KFC.png"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          KFC
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/burgerking.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          BurgerKing
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/carrefour.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          carrefour
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/pizza.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          PizzaHut
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/papa john.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          Papa John's
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/subay.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          Subway
+        </p>
+      </div>
+      <div class="relative">
+        <img
+          class="h-[150px] w-[150px] rounded-full"
+          src="glovo-image/tacobell.jpg"
+          alt=""
+        />
+        <p
+          class="absolute bottom-[-2px] left-6 w-[100px] h-[30px] p-0.5 rounded font-bold font-sans text-center text-[15px] item-center bg-[#EEDC82] text-[#8B8000]"
+        >
+          TacoBell
+        </p>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-[40px] text-center mt-[80px] font-sans font-bold">
+        Anything delivered
+      </h1>
+    </div>
+    <section
+      class="grid grid-cols-1 place-content-center md:grid-cols-1 lg:grid-cols-3"
+    >
+      <div class="m-[20px]">
+        <img
+          src="glovo-image/delivery..svg"
+          alt=""
+          class="ml-[75px] mt-[20px]"
+        />
+        <h3 class="text-[25px] text-center font-sans font-bold m-[10px]">
+          Your city's top restaurants
+        </h3>
+        <p class="text-center font-sans font-medium">
+          With a great variety of restaurants you <br />
+          can order your favourite food or
+          <span class="bg-[#FFC042] rounded-full p-[2px]">
+            explore <br />
+            new restaurants nearby!</span
+          >
+        </p>
+      </div>
+      <div class="m-[20px]">
+        <img
+          src="glovo-image/delivery..svg"
+          alt=""
+          class="ml-[75px] mt-[20px]"
+        />
+        <h3 class="text-[25px] text-center font-bold font-sans m-[10px]">
+          Fast delivery
+        </h3>
+        <p class="text-center font-sans font-medium">
+          Like a flash! Order or send anything in your <br />
+          city and
+          <span class="bg-[#FFC042] rounded-full p-[2px]"
+            >receive it in minutes</span
+          >
+        </p>
+      </div>
+      <div class="m-[20px]">
+        <img
+          src="glovo-image/groceries..svg"
+          alt=""
+          class="ml-[75px] mt-[20px]"
+        />
+        <h3 class="text-[25px] text-center font-bold font-sans m-[10px]">
+          Groceries delivery & more
+        </h3>
+        <p class="font-sans text-center font-medium">
+          Find anything you need! From <br />
+          <span class="bg-[#FFC042] rounded-full p-[2px]"
+            >supermarkets to shops, pharmacies to <br />
+            florists</span
+          >
+          — if it's in your city order it and <br />
+          receive it.
+        </p>
+      </div>
+
+      <button
+        class=" m-auto bg-[#017963] rounded-full p-[10px] font-bold text-[#ffffff]"
+      >
+        Explore stores around you
+      </button>
+    </section>
+    
+    <div class="mt-[100px] bg-[#FFC042]">
+      <img src="glovo-image/countries..svg" alt="" class="m-auto pt-[40px]" />
+      <h1 class="text-[40px] text-center text-[40px] font-sans font-bold">
+        Countries where we deliver
+      </h1>
+    </div>
+    <section class="bg-[#FFC042] h-[780px] md:h-[660px] lg:h-[300px]">
+      <div
+        class="flex flex-wrap gap-2 justify-center px-[230px] py-[30px] md:px-[280px] lg:px-[250px]"
+      >
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Spain
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Italy
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Ukraine
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Romania
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Gorgia
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Portugal
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Poland
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Morroco
+        </button>
+
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Kazakhstan
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Croatia
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Kenya
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[150px] font-bold text-[#000000]"
+        >
+          Cote D'Ivoire
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Serbia
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Moldova
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Uganda
+        </button>
+
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Kyrgyzstan
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[220px] font-bold text-[#000000]"
+        >
+          Bosnia and Herzegovina
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Bulgaria
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[120px] font-bold text-[#000000]"
+        >
+          Montenegro
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Nigeria
+        </button>
+
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Armenia
+        </button>
+        <button
+          class="bg-[#d1d1d1] rounded-full p-[10px] w-[100px] font-bold text-[#000000]"
+        >
+          Tunisia
+        </button>
+      </div>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2">
+      <div class="ml-[70px] w-[50%] place-content-center">
+        <img
+          src="glovo-image/download-icon..svg"
+          alt=""
+          class="pl-[100px] ml-[70px]"
+        />
+        <h1 class="text-[40px] text-[40px] ml-[40px] font-sans font-bold">
+          Download the app
+        </h1>
+        <p class="font-medium">
+          Order anything and track it in real time with the Glovo app.
+        </p>
+        <div class="flex gap-[20px] mt-[10px] ml-[60px]">
+          <img src="glovo-image/ios-button.svg" alt="" />
+          <img src="glovo-image/google-button..svg" alt="" />
+        </div>
+      </div>
+      <div class="w-[70%] mr-[70px]">
+        <img src="glovo-image/phone-glovo.png" alt="" class="w-[50%] md:w-[50%] lg:w-[100%]" />
+      </div>
+    </section>
+
+    <section class="bg-green-50">
+      <div>
+        <img src="glovo-image/hands..svg" alt="" class="m-auto" />
+        <h1 class="text-[40px] text-center ml-[40px] font-sans font-bold">
+          Let’s do it together
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+        <div class="m-[20px]">
+          <img src="glovo-image/rider-blob..png" alt="" class="w-[250px]" />
+          <h3 class="text-[25px] font-bold font-sans text-center">
+            Become a rider
+          </h3>
+          <p class="font-medium text-center mt-[20px]">
+            Enjoy flexibility, freedom and competitive <br />earnings by
+            delivering through Glovo.
+          </p>
+          <button
+            class="bg-[#017963] p-[10px] w-[150px] ml-[70px] mt-[20px] rounded-full p-[10px] font-bold item-center text-[#ffffff]"
+          >
+            Register Here
+          </button>
+        </div>
+        <div class="m-[20px]">
+          <img src="glovo-image/partners-blob..png" alt="" class="w-[250px]" />
+          <h3 class="text-[25px] font-bold font-sans text-center">
+            Become a partner
+          </h3>
+          <p class="font-medium text-center mt-[20px]">
+            Grow with Glovo! Our technology and user <br />
+            base can help you boost sales and unlock <br />
+            new opportunities!
+          </p>
+          <button
+            class="bg-[#017963] p-[10px] w-[150px] ml-[80px] mt-[20px] rounded-full p-[10px] font-bold text-[#ffffff]"
+          >
+            Register Here
+          </button>
+        </div>
+        <div class="m-[20px]">
+          <img src="glovo-image/careers-blob..png" alt="" class="w-[260px]" />
+          <h3 class="text-[25px] font-bold font-sans text-center">Careers</h3>
+          <p class="font-medium text-center mt-[20px]">
+            Ready for an exciting new challenge? If you’re <br />
+            ambitious, humble, and love working with <br />
+            others, then we want to hear from you!
+          </p>
+          <button
+            class="bg-[#017963] p-[10px] w-[150px] ml-[90px] mt-[20px] rounded-full p-[10px] font-bold text-[#ffffff]"
+          >
+            Register Here
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#000000] text-white grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 pt-[50px] mt-[60px]">
+      <div class=" text-center font-sans">
+        <img src="glovo-image/download-removebg-preview (2).png" alt="" />
+        <div>
+          <h3 class="text-[20px] font-bold font-sans text-center">
+            Let’s do it together
+          </h3>
+          <ul>
+            <li><a href="" class="hover:underline">Careers</a></li>
+            <li><a href="" class="hover:underline">Glovo for Partners</a></li>
+            <li><a href="" class="hover:underline">Couriers</a></li>
+            <li><a href="" class="hover:underline">Glovo Business</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class=" text-center font-sans">
+        <div>
+          <h3 class="text-[20px] font-bold font-sans text-center">
+            Links of interest
+          </h3>
+          <ul>
+            <li><a href="" class="hover:underline">About us</a></li>
+            <li><a href="" class="hover:underline">FAQ</a></li>
+            <li><a href="" class="hover:underline">Blog</a></li>
+            <li><a href="" class="hover:underline">Contact us</a></li>
+            <li><a href="" class="hover:underline">Security</a></li>
+            <li><a href="" class="hover:underline">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class=" text-center font-sans">
+        <div class="leading-3">
+          <img src="glovo-image/ios-button.svg" alt="" />
+          <img src="glovo-image/google-button..svg" alt="" />
+        </div>
+        <div>
+          <ul>
+            <li><a href="" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="" class="hover:underline">Cookies Policy</a></li>
+            <li><a href="" class="hover:underline">Compliance</a></li>
+            <li>
+              <a href="" class="hover:underline">Configure the cookies</a>
+            </li>
+            <li><a href="" class="hover:underline">Digital Services Act</a></li>
+            <li>
+              <a href="" class="hover:underline"
+                >European Accessibility <br />
+                Act</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
